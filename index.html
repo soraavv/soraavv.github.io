@@ -61,6 +61,13 @@
             transition: 0.3s;
         }
 
+        .project-link {
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s;
+        }
+        .project-link:hover { transform: translateY(-3px); }
+
         .project-card {
             background: #f9f9f9;
             padding: 15px;
@@ -72,7 +79,6 @@
         .project-card h3 { margin: 0; font-size: 16px; color: #333; }
         .project-card p { margin: 5px 0 0; font-size: 13px; color: #777; }
         
-        /* WARNA LABEL BARU: Ungu Gelap */
         .tag {
             display: inline-block;
             background: #6c5ce7; 
@@ -114,11 +120,13 @@
         </a>
 
         <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>🐾 Chatbot Pet Circle</h3>
-            <p>An intelligent AI assistant designed to help pet owners manage their pets' needs and health.</p>
-            <span class="tag">AI & Chatbot</span>
-        </div>
+        <a href="https://www.chatbase.co/Ly-hyfRiq0KUqbIAgH290/help" target="_blank" class="project-link">
+            <div class="project-card">
+                <h3>🐾 Chatbot Pet Circle</h3>
+                <p>An intelligent AI assistant designed to help pet owners manage their pets' needs and health.</p>
+                <span class="tag">AI & Chatbot</span>
+            </div>
+        </a>
 
         <div class="contact-form">
             <form action="https://formspree.io/f/mjgejvob" method="POST">
