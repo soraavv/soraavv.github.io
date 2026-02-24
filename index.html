@@ -10,7 +10,7 @@
             font-family: 'Poppins', sans-serif; 
             text-align: center; 
             background-color: skyblue; 
-            padding: 50px 20px; 
+            padding: 40px 20px; 
             margin: 0;
             display: flex;
             justify-content: center;
@@ -28,25 +28,26 @@
             padding: 30px; 
             border-radius: 25px; 
             box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            max-width: 350px;
+            max-width: 380px;
             width: 100%;
             animation: fadeInUp 1s ease-out;
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid skyblue;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             transition: 0.3s;
         }
 
         .profile-img:hover { transform: scale(1.1); }
 
         h1 { color: #333; margin: 10px 0; font-size: 24px; }
-        p { color: #666; font-size: 14px; margin-bottom: 20px; }
+        h2 { color: #333; font-size: 18px; margin-top: 20px; text-align: left; border-left: 4px solid skyblue; padding-left: 10px; }
+        p { color: #666; font-size: 14px; margin-bottom: 15px; }
 
         .btn-instagram {
             display: block;
@@ -54,10 +55,33 @@
             background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
             color: white;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 12px;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             transition: 0.3s;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: left;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+        }
+        .project-card h3 { margin: 0; font-size: 16px; color: #333; }
+        .project-card p { margin: 5px 0 0; font-size: 13px; color: #777; }
+        
+        /* WARNA LABEL BARU: Ungu Gelap */
+        .tag {
+            display: inline-block;
+            background: #6c5ce7; 
+            color: white;
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-top: 8px;
+            font-weight: 600;
         }
 
         .contact-form {
@@ -67,37 +91,14 @@
             padding-top: 20px;
         }
 
-        .contact-form label {
-            font-size: 12px;
-            font-weight: 600;
-            color: #333;
-            display: block;
-            margin-bottom: 5px;
-        }
-
+        .contact-form label { font-size: 12px; font-weight: 600; color: #333; display: block; margin-bottom: 5px; }
         .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            font-family: inherit;
-            box-sizing: border-box;
+            width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 10px; font-family: inherit; box-sizing: border-box;
         }
 
         .btn-send {
-            width: 100%;
-            padding: 10px;
-            background-color: skyblue;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
+            width: 100%; padding: 10px; background-color: skyblue; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; transition: 0.3s;
         }
-
-        .btn-send:hover { background-color: #70c1e3; }
     </style>
 </head>
 <body>
@@ -111,6 +112,13 @@
         <a href="https://www.instagram.com/pisshapis_?igsh=cmM3aGRxMHdoaDky" target="_blank" class="btn-instagram">
             Follow Instagram
         </a>
+
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>🐾 Chatbot Pet Circle</h3>
+            <p>An intelligent AI assistant designed to help pet owners manage their pets' needs and health.</p>
+            <span class="tag">AI & Chatbot</span>
+        </div>
 
         <div class="contact-form">
             <form action="https://formspree.io/f/mjgejvob" method="POST">
